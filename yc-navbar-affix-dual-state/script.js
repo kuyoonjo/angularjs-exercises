@@ -1,0 +1,1 @@
+angular.module('myApp', ['ui.bootstrap', 'yc.navbar.affix', 'yc.navbar.affix.dual.state']);

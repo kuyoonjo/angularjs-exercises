@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>UI Bootstrap Dual State Navbar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="angular-yc-navbar-affix.js"></script>
+    <script src="angular-yc-navbar-affix-dual-state.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>UI Bootstrap Dual State Navbar</h1>
+    <p>A dual state navigation bar is a navigation bar who has two different displays when at the top of the page or not.</p>
+</div>
+<nav class="navbar" ng-class="{'navbar-default':!condition(), 'navbar-inverse':condition()}"
+     yc-navbar-affix
+     yc-navbar-affix-dual-state
+     template-url="nav.html"
+     template-url-affix="nav-affix.html">
+</nav>
+
+<div class="container">
+    <h3>Requirements</h3>
+    <ul>
+        <li>Angular UI Bootstrap</li>
+        <li>Bootstrap CSS(Only the css file)</li>
+        <li>No JQuery required. Please make sure you are not using Bootstrap default javascript.</li>
+    </ul>
+</div>
+<div class="container">
+    <h3>Usage:</h3>
+    <ul>
+        <li>put [yc-navbar-affix] in your navbar tag.</li>
+        <li>put [yc-navbar-affix-dual-state] in your navbar tag.</li>
+        <li>set attributes template-url and template-url-affix</li>
+    </ul>
+</div>
+<div class="container" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+    <h3>Paragraph {{ i }}</h3>
+    <p>I'm just trying to make the page longer.</p>
+</div>
+
+</body>
+</html>

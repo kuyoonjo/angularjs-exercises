@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>UI Bootstrap Navbar Affix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="angular-yc-navbar-affix.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>UI Bootstrap Navbar Affix</h1>
+    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+<nav yc-navbar-affix class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h3>Requirements</h3>
+    <ul>
+        <li>Angular UI Bootstrap</li>
+        <li>Bootstrap CSS(Only the css file)</li>
+        <li>No JQuery required. Please make sure you are not using Bootstrap default javascript.</li>
+    </ul>
+</div>
+<div class="container">
+    <h3>Requirements</h3>
+    <ul>
+        <li>Angular UI Bootstrap</li>
+        <li>Bootstrap CSS(Only the css file)</li>
+        <li>No JQuery required. Please make sure you are not using Bootstrap default javascript.</li>
+    </ul>
+</div>
+<div class="container">
+    <h3>Usage:</h3>
+    <p>put [yc-navbar-affix] in your navbar tag. </p>
+</div>
+<div class="container" ng-repeat="i in [1,2,3,4,5]">
+    <h3>Paragraph {{ i }}</h3>
+    <p>I'm just trying to make the page longer.</p>
+</div>
+
+</body>
+</html>
